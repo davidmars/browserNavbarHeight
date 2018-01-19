@@ -1,6 +1,6 @@
 {
   "name": "browsernavbarheight",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Calculates the browser navbar height. Helpfull to get real screen height on mobile devices via css variable. Declare css variable containning this value so it's possible to calc( 100vh - var(--browser-navbar-height)).",
   "main": "browserNavbarHeight.js",
   "scripts": {
