@@ -1,0 +1,31 @@
+{
+  "name": "browsernavbarheight",
+  "version": "0.0.1",
+  "description": "Calculates the browser navbar height. Helpfull to get real screen height on mobile devices via css variable. Declare css variable containning this value so it's possible to calc( 100vh - var(--browser-navbar-height)).",
+  "main": "browserNavbarHeight.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidmars/browserNavbarHeight.git"
+  },
+  "keywords": [
+    "ios",
+    "mobile",
+    "android",
+    "ipad",
+    "navbar",
+    "mobile",
+    "scroll",
+    "full",
+    "screen",
+    "fullscreen"
+  ],
+  "author": "davidmars",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/davidmars/browserNavbarHeight/issues"
+  },
+  "homepage": "https://github.com/davidmars/browserNavbarHeight#readme"
+}

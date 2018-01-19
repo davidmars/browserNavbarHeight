@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>browserNavBarHeight</title>
+    <style>
+        html,body{
+            font-family: monospace;
+            margin: 0;
+            overflow-x: hidden;
+        }
+        div{
+            box-sizing: border-box;
+        }
+        #red,#green,#blue,#pink{
+            padding: 10px;
+            float: left;
+            width: 25%;
+            color: #fff;
+            text-align: center;
+        }
+        #red{
+            background-color: red;
+            height: calc(100vh);
+        }
+        #green{
+            background-color: green;
+            height: calc(100vh - var(--browser-navbar-height,0px));
+        }
+        #blue{
+            background-color: blue;
+            height: calc(50vh);
+        }
+        #pink{
+            background-color: pink;
+            height: calc(50vh - var(--browser-navbar-height,0px));
+        }
+        #middle-line{
+            border: 1px dashed black;
+            position:absolute;
+            width: 100%;
+            top:50%;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="red">red<br>(too big on (real) mobile browser)</div>
+    <div id="green">green<br>(good)</div>
+    <div id="blue">blue<br>(too big on (real) mobile browser)</div>
+    <div id="pink">pink<br>(good)</div>
+    <div id="middle-line"></div>
+
+
+    <script src="../browserNavbarHeight.js"></script>
+    <script>
+
+    </script>
+</body>
+</html>
