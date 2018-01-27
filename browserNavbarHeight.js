@@ -1,3 +1,4 @@
+"use strict";
 
 
 
@@ -10,10 +11,12 @@
     function browserNavbarHeight(){
         var d,r;
         d=document.createElement("div");
+
         d.style.height="100vh";
         document.body.appendChild(d);
         r=d.offsetHeight-window.innerHeight;
-        d.remove();
+
+        document.body.removeChild(d);
         return r;
     }
 
@@ -23,7 +26,7 @@
      *  - javascript variable
      */
 
-    let h=browserNavbarHeight();
+    var h=browserNavbarHeight();
     //define css variable
     var html=document.getElementsByTagName("html");
     html[0].style.setProperty("--browser-navbar-height", String(h)+"px");
